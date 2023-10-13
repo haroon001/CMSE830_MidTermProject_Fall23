@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import json
 import numpy as np
+import seaborn as sns
 
 def load_csv(csv_path, save = False):
 	with pd.read_csv(csv_path, iterator=True) as reader:
