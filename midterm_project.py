@@ -205,7 +205,7 @@ if __name__=='__main__':
 
 	st.divider()
 	
-	st.subheader("Correlation between Time spend and Revenue")
+	st.subheader("Correlation between Time spent and Revenue")
 	st.write("Finally, we demonstrate correlation between revenue and spent time \
 			. Due to presence of large number of zeros relation is not clear exactly \
 			however it conversion appears to be more likely in specific range of spent time.")
