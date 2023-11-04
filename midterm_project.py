@@ -203,8 +203,8 @@ if __name__=='__main__':
 	st.write("Here parallel plot highlights key factor in generating revenue which is total time spent \
 		on online store by user, higher the spent time higher the odds of revenue (darker lines). It suggests that we should \
 		also spend and focus on user interface, user experience and other factors which can keep visitor engaged on site. \
-		Very high values for spent time should be ignored as they likely represent data scrapping bots in most cases, \
-		safe range is less than or equal to 2000.")
+		Very high values for spent time should be ignored (except few exceptions) as they likely represent data scrapping bots \
+		in most cases, safe range is less than or equal to 2000.")
 
 	fig = px.parallel_coordinates(subset_df[['Date', 'VisitorId','TimeOnSite', 'Transaction Revenue']], color="Transaction Revenue",color_continuous_scale=px.colors.diverging.Tealrose, color_continuous_midpoint=2)
 	st.plotly_chart(fig)
