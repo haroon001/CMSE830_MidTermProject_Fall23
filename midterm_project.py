@@ -222,3 +222,10 @@ if __name__=='__main__':
 	fig = px.scatter(subset_df, x='TimeOnSite', y='Transaction Revenue')
 	st.plotly_chart(fig)
 
+	st.subheader("Conclusion")
+	st.write("As stated initially, we can see 80/20 rule in effect during data analysis of Google Store data. \
+			As a comprehensive strategy, digital marketing officials should focus on US, UK and European users \
+			traffic. They should also prioritise referral and organic search based marketing. Furthermore, they \
+			should find outlier customers for offering best discounts or effective Ads as they are most likely to buy. \
+			Last but not the least, officials must improve average time user spends on the store which can increase odds of \
+			higher revenue.")
